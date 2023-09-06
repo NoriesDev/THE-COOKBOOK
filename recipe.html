@@ -10,6 +10,20 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
             crossorigin="anonymous"
         />
+        <style>
+            .hover-effect:hover {
+                opacity: 0.5;
+            }
+            .recipe-img {
+                z-index: 0;
+            }
+            .img-text {
+                display: none;
+            }
+            .img-text:hover {
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -29,22 +43,14 @@
             </div>
             <div class="row">
                 <div class="col col-lg-6">
-                    <div
-                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
-                        data-mdb-ripple-color="light"
-                    >
+                    <a href="#directions">
                         <img
                             src="https://www.allrecipes.com/thmb/kvvETNZfOtAptH69gUsK6FaKRKA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg"
                             alt="a stack of pancakes with syrup"
-                            class="img-fluid"
+                            class="img-fluid hover-effect recipe-img"
                         />
-                        <a href="#!">
-                            <div
-                                class="mask"
-                                style="background-color: hsla(0, 0%, 98%, 0.2)"
-                            ></div>
-                        </a>
-                    </div>
+                    </a>
+                    <p class="img-text">Good Old-Fashioned Pancakes</p>
                 </div>
             </div>
             <div class="row">
@@ -77,7 +83,7 @@
             </div>
             <div class="row">
                 <div class="col col-lg-8">
-                    <h2>Directions</h2>
+                    <h2 id="directions">Directions</h2>
                     <h3>Step 1</h3>
                     <p>
                         Sift flour, baking powder, sugar, and salt together in a
@@ -97,8 +103,8 @@
             </div>
         </div>
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
     </body>
