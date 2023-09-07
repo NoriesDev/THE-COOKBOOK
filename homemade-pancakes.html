@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Homemade Pancakes</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+        <style>
+            .hover-effect .sneaky {
+                visibility: hidden;
+            }
+            .hover-effect:hover {
+                opacity: 0.5;
+            }
+
+            .hover-effect:hover .sneaky {
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h2 class="display-4 fw-bold">Homemade Pancakes</h2>
+                    <p>
+                        Learn how to make Homemade Pancakes that are light,
+                        fluffy, and as tasty as diner pancakes. Prepare to break
+                        up with boxed pancake mix; these pancakes from scratch
+                        taste so much better and take just 20 minutes.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <a href="#directions">
+                        <div
+                            class="card text-bg-dark hover-effect border-0 vh-40"
+                        >
+                            <img
+                                src="./img/pexels-tijana-drndarski-2635307.jpg"
+                                class="card-img"
+                                alt="a stack of pancakes"
+                            />
+                            <div class="card-img-overlay">
+                                <h5
+                                    class="sneaky card-title text-center text-black display-4"
+                                >
+                                    Homemade Pancakes
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="colgroup">Ingredients</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 ½ cups all-purpose flour</td>
+                                <td>3 ½ teaspoons baking powder</td>
+                            </tr>
+                            <tr>
+                                <td>1 tablespoon granulated sugar</td>
+                                <td>½ teaspoon salt</td>
+                            </tr>
+                            <tr>
+                                <td>1 ¼ cups milk</td>
+                                <td>1 large egg</td>
+                            </tr>
+                            <tr>
+                                <td>3 tablespoons butter melted</td>
+                                <td>
+                                    butter and maple syrup or fresh fruit and
+                                    whipped cream, for serving
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h2 id="directions">Directions</h2>
+                    <h3>Step 1</h3>
+                    <p>
+                        In a large bowl, whisk together flour, baking powder,
+                        sugar, and salt. Make a well in the center and pour in
+                        the milk, egg, and melted butter; mix until smooth.
+                    </p>
+                    <h3>Step 2</h3>
+                    <p>
+                        Heat a griddle or frying pan over medium high heat,
+                        greasing if desired. Pour or scoop the batter onto the
+                        griddle, using approximately ¼ cup for each pancake.
+                    </p>
+                    <h3>Step 3</h3>
+                    <p>
+                        When bubbles start to form on the first side, carefully
+                        flip and brown the second side. Repeat with remaining
+                        batter (you should have about 8 pancakes). Serve hot
+                        with butter and maple syrup or fresh fruit and whipped
+                        cream.
+                    </p>
+                    <div id="shareAlert"></div>
+                    <a href="#shareButton">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg"
+                            id="shareButton"
+                        >
+                            Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

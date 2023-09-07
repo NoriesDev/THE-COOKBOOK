@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Easy Pancakes</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+        <style>
+            .hover-effect .sneaky {
+                visibility: hidden;
+            }
+            .hover-effect:hover {
+                opacity: 0.5;
+            }
+
+            .hover-effect:hover .sneaky {
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h2 class="display-4 fw-bold">Easy Pancakes</h2>
+                    <p>
+                        For delicious homemade pancakes, this Easy Pancake
+                        Recipe is the perfect base for your favorite toppings
+                        and variations!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <a href="#directions">
+                        <div
+                            class="card text-bg-dark hover-effect border-0 vh-40"
+                        >
+                            <img
+                                src="./img/pexels-lucas-guizo-3780469.jpg"
+                                class="card-img"
+                                alt="a stack of pancakes"
+                            />
+                            <div class="card-img-overlay">
+                                <h5
+                                    class="sneaky card-title text-center text-black display-4"
+                                >
+                                    Easy Pancakes
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="colgroup">Ingredients</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 ½ cups all-purpose flour</td>
+                                <td>3 ½ teaspoons baking powder</td>
+                            </tr>
+                            <tr>
+                                <td>1 tablespoon sugar</td>
+                                <td>½ teaspoon salt</td>
+                            </tr>
+                            <tr>
+                                <td>1 ¼ cups milk</td>
+                                <td>1 egg</td>
+                            </tr>
+                            <tr>
+                                <td>3 tablespoons butter melted</td>
+                                <td>1 teaspoon vanilla extract</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Toppings: fruit, whipped cream, buttermilk
+                                    syrup
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h2 id="directions">Directions</h2>
+                    <h3>Step 1</h3>
+                    <p>
+                        In a large bowl, sift together the flour, baking powder,
+                        sugar, and salt.
+                    </p>
+                    <h3>Step 2</h3>
+                    <p>
+                        Make a well in the center of the dry ingredients. Pour
+                        in the milk, egg, melted butter, and vanilla. Mix until
+                        combined.
+                    </p>
+                    <h3>Step 3</h3>
+                    <p>
+                        Lightly oil a griddle or frying pan and heat to
+                        medium-high (about 375°F).
+                    </p>
+                    <h3>Step 4</h3>
+                    <p>
+                        Pour about ¼ cup of batter onto the griddle for each
+                        pancake. Cook until bubbly and lightly browned, about 3
+                        minutes. Flip and cook for 2 minutes more until browned
+                        on the second side. Serve hot with your favorite
+                        toppings.
+                    </p>
+                    <div id="shareAlert"></div>
+                    <a href="#shareButton">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg"
+                            id="shareButton"
+                        >
+                            Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
