@@ -19,8 +19,8 @@ const alertTrigger = document.getElementById("shareButton");
 if (alertTrigger) {
     alertTrigger.addEventListener("click", () => {
         appendAlert(
-            `Share this recipe with your friends: ${location.href}`,
-            "success"
+            `If you like this recipe, share this recipe with your friends: <a href="${location.href}" class="alert-link">${location.href}</a>`,
+            "info"
         );
     });
 }
